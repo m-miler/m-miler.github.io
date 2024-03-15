@@ -1,0 +1,18 @@
+footer {
+    color: $text-muted;
+    @include font-size(0.6rem);
+
+    a {
+        color: inherit;
+
+        &:hover {
+            // color: lighten($text-muted, 10%);
+            @include transition(.15s ease-in-out);
+            text-decoration: inherit;
+        }
+
+        &.repo-link {
+            text-decoration: underline;
+        }
+    }
+}
